@@ -1,0 +1,40 @@
+.align-left {
+    float:right;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    transition: 0.5s;
+
+  }
+
+  li a:hover {
+      color: #f01f1f;
+      transition: 0.5s;
+  }
+
+  .btn {
+      background-color: #f01f1f;
+      color: white;
+  }
+  
+.green {
+    background-color: #f01f1f;
+    font-family: 'DM Sans', sans-serif;
+
+}
