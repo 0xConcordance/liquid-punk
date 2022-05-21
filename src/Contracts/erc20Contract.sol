@@ -10,20 +10,22 @@ import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 contract OPUNK is ERC20, ERC20Burnable, Ownable {
 
     IERC721 optiPunk;
+    //IERC20 oPUNKToken;
 
     constructor() ERC20("oPUNK", "oPUNK") {
         optiPunk = IERC721(address(0xB8Df6Cc3050cC02F967Db1eE48330bA23276A492));
+        //oPUNKToken = IERC20(msg.sender);
 
     }
     
     // give user 100 tokens in exchange for 1 NFT
     function _mintTokensToUser(address to) internal {
-        _mint(to, 100);
+        _mint(to, 100000000000000000000);
     }
 
     // burn token
     function _burnTokens(address user) internal {
-        _burn(user, 100);
+        _burn(user, 100000000000000000000);
     }
 
     function redeemTokens(uint256 _tokenID) public {

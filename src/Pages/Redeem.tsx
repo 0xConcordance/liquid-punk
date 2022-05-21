@@ -44,7 +44,7 @@ export const Redeem = () => {
             
             {oPunkBalance && (
                 <div className="balance container">
-                <p className="">Holding <span className='bold'> {oPunkBalance.toString()} </span>oPUNK Tokens.</p>
+                <p className="">Holding <span className='bold'> {formatEther(oPunkBalance)} </span>oPUNK Tokens.</p>
                 </div>
             )}
 
