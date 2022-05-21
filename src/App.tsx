@@ -16,7 +16,7 @@ function App() {
       supportedChains: [ChainId.Optimism],
       readOnlyChainId: ChainId.Optimism,
       readOnlyUrls: {
-        [Optimism.chainId]: getDefaultProvider('optimism'),
+        [Optimism.chainId]: "https://mainnet.optimism.io",
       },
     }}>
 
