@@ -39,7 +39,7 @@ export const Redeem = () => {
             <h1>Redeem</h1>
             <p>Redeem an Optipunk for 100 oPUNK. 
                 You can find all available NFTs 
-                 <a href='https://quixotic.io/0x45EDB05ae6E596B52aA9c76bF9F95313d64F78f3?tab=0'> here.</a>
+                 <a href='https://quixotic.io/0xec4CA2Ac3889A79C3d9ceE2D39Bba5febC6265af'> here.</a>
             </p>
             
             {oPunkBalance && (
