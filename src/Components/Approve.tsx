@@ -34,7 +34,7 @@ export const Approve = (props) => {
       }
 
     return(
-        <div>
+        <div className='container frame'>
             <h3>Approve an Optipunk</h3>
             <form onSubmit={handleSubmit}>
                 <label>Enter Token ID:</label>

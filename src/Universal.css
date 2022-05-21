@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    background-color: #e6e6e6;
+  
+  }
+
 input[type=number], select {
     width: 100%;
     padding: 12px 20px;
@@ -18,16 +27,43 @@ input[type=number], select {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: 0.3s cubic-bezier();
+
     
   }
   
   input[type=submit]:hover {
-    background-color: #f01f1f;
+    background-color: #ed6262;
+    transition: 0.3s cubic-bezier();
   }
   
   div {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 5px;
   }
   
+  a {
+    color: #f01f1f;
+    text-decoration: none;
+    transition: 0.2s;
+
+  }
+
+  a:hover {
+    color: #f79393;
+    transition: 0.2s;
+  }
+
+  .frame {
+    border-style: solid;
+    border-width: 1.5px;
+    padding: 20px;
+    border-color: rgb(203, 203, 203);
+    margin-top: 15px;
+  }
+
+  .bold {
+    font-weight: 700;
+    color: #f01f1f;
+  }

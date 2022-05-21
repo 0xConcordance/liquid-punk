@@ -35,23 +35,28 @@ export const Redeem = () => {
       }
 
     return(
-        <div className="frame">
+        <div className="container">
             <h1>Redeem</h1>
-            <p>Redeem NFTs.</p>
+            <p>Redeem an Optipunk for 100 oPUNK. 
+                You can find all available NFTs 
+                 <a href='https://quixotic.io/0x45EDB05ae6E596B52aA9c76bF9F95313d64F78f3?tab=0'> here.</a>
+            </p>
             
             {oPunkBalance && (
-                <div className="balance">
-                <p className="bold">Holding {oPunkBalance.toString()} oPUNK Tokens.</p>
+                <div className="balance container">
+                <p className="">Holding <span className='bold'> {oPunkBalance.toString()} </span>oPUNK Tokens.</p>
                 </div>
             )}
 
+        <div className='container frame'>
+        <h3>Redeem</h3>
         <form onSubmit={handleSubmit}>
                 <label>TokenID:</label>
                 <input type="number" value={uri} onChange={(e) => setUri(e.target.value)} placeholder="Enter the ID of the optiPunk you want to redeem"/>
                 <input type="submit" className='btn btn-dark'/>
             </form>
             <p>Status: {status}</p>
-                
+        </div>        
         </div>
     );
 }

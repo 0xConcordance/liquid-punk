@@ -37,27 +37,27 @@ export const Mint = () => {
       }
     
     return(
-        <div className="frame container">
+        <div className="container">
             <h1>Mint</h1>
-            <p>Mint the oPunk Token. </p>
-            <p>Please make sure to approve the specific NFT that you want to tokenize.</p>
+            <p>Mint the oPunk Token. Please make sure to approve the specific NFT that you want to tokenize.</p>
 
             {optiPunkBalance && (
-                <div className="balance">
-                <p className="bold">Holding {optiPunkBalance.toString()} OptiPunks</p>
+                <div className="balance container">
+                <p className="">Holding <span className='bold'>{optiPunkBalance.toString()} </span>OptiPunks</p>
                 </div>
             )}
 
         <Approve />
-
-        <h3>Mint </h3>
-        <form onSubmit={handleSubmit}>
-                <label>TokenID:</label>
-                <input type="number" value={uri} onChange={(e) => setUri(e.target.value)} placeholder="Enter the ID of the optiPunk you want to trade"/>
-                <p>Status: {status}</p>
-                <input type="submit" className='btn btn-dark' value="Mint oPUNK" />
-        </form>
-
+        
+        <div className='container frame'>
+            <h3>Mint </h3>
+            <form onSubmit={handleSubmit}>
+                    <label>TokenID:</label>
+                    <input type="number" value={uri} onChange={(e) => setUri(e.target.value)} placeholder="Enter the ID of the optiPunk you want to trade"/>
+                    <p>Status: {status}</p>
+                    <input type="submit" className='btn btn-dark' value="Mint oPUNK" />
+            </form>
+        </div>
         </div>
     );
 }
