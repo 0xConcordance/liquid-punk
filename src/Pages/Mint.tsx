@@ -14,6 +14,8 @@ import { ERC20address } from '../Contracts/er20Address';
 
 import { useState } from "react";
 
+import {Approve} from '../Components/Approve'
+
 export const Mint = () => {
     const [uri, setUri] = useState("");
 
@@ -33,25 +35,28 @@ export const Mint = () => {
         sendTransaction(uri)
 
       }
-
     
     return(
-        <div className="frame">
+        <div className="frame container">
             <h1>Mint</h1>
             <p>Mint the oPunk Token. </p>
+            <p>Please make sure to approve the specific NFT that you want to tokenize.</p>
 
             {optiPunkBalance && (
                 <div className="balance">
                 <p className="bold">Holding {optiPunkBalance.toString()} OptiPunks</p>
                 </div>
             )}
-        
+
+        <Approve />
+
+        <h3>Mint </h3>
         <form onSubmit={handleSubmit}>
                 <label>TokenID:</label>
-                <input type="number" value={uri} onChange={(e) => setUri(e.target.value)}/>
-                <input type="submit" className='btn btn-dark'/>
-            </form>
-            <p>Status: {status}</p>
+                <input type="number" value={uri} onChange={(e) => setUri(e.target.value)} placeholder="Enter the ID of the optiPunk you want to trade"/>
+                <p>Status: {status}</p>
+                <input type="submit" className='btn btn-dark' value="Mint oPUNK" />
+        </form>
 
         </div>
     );

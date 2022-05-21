@@ -47,7 +47,7 @@ export const Redeem = () => {
 
         <form onSubmit={handleSubmit}>
                 <label>TokenID:</label>
-                <input type="number" value={uri} onChange={(e) => setUri(e.target.value)}/>
+                <input type="number" value={uri} onChange={(e) => setUri(e.target.value)} placeholder="Enter the ID of the optiPunk you want to redeem"/>
                 <input type="submit" className='btn btn-dark'/>
             </form>
             <p>Status: {status}</p>

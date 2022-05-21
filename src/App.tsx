@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { getDefaultProvider, utils } from 'ethers'
-import { ChainId, DAppProvider, OptimismKovan, Rinkeby, useEthers } from '@usedapp/core';
+import { ChainId, DAppProvider, OptimismKovan, Rinkeby, useEthers , Optimism} from '@usedapp/core';
 
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 
@@ -13,10 +13,10 @@ import {Redeem} from './Pages/Redeem'
 function App() {
   return (
     <DAppProvider config={{
-      supportedChains: [ChainId.Rinkeby],
-      readOnlyChainId: ChainId.Rinkeby,
+      supportedChains: [ChainId.Optimism],
+      readOnlyChainId: ChainId.Optimism,
       readOnlyUrls: {
-        [Rinkeby.chainId]: getDefaultProvider('rinkeby'),
+        [Optimism.chainId]: getDefaultProvider('optimism'),
       },
     }}>
 
