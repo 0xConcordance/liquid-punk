@@ -19,6 +19,9 @@ export const Navbar = () => {
             <li>
                 <Link to='/redeem' className="">Redeem</Link>
             </li>
+            <li>
+                <Link to='/trade' className="">Trade</Link>
+            </li>
             <li className="align-left">
                 <Connect/>
             </li>

@@ -9,6 +9,7 @@ import {Home} from './Pages/Home'
 import {Navbar} from './Components/Navbar'
 import {Mint} from './Pages/Mint'
 import {Redeem} from './Pages/Redeem'
+import {Trade} from './Pages/Trade'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='/' element={ <Home /> }/>
           <Route path='/mint' element={ <Mint /> }/>
           <Route path='/redeem' element={ <Redeem /> }/>
+          <Route path='/trade' element={ <Trade /> }/>
 
         </Routes>
 
