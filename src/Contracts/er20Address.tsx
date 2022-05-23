@@ -1,1 +1,1 @@
-export const ERC20address = "0xec4CA2Ac3889A79C3d9ceE2D39Bba5febC6265af"
+export const ERC20address = "0x6D10AeaBB99f7bE4F5a10dCC73a6274d30563073"

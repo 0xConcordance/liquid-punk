@@ -10,19 +10,22 @@ import {Navbar} from './Components/Navbar'
 import {Mint} from './Pages/Mint'
 import {Redeem} from './Pages/Redeem'
 import {Trade} from './Pages/Trade'
+import {Note} from './Components/Note'
 
 function App() {
   return (
     <DAppProvider config={{
-      supportedChains: [ChainId.Optimism],
-      readOnlyChainId: ChainId.Optimism,
+      supportedChains: [ChainId.Rinkeby],
+      readOnlyChainId: ChainId.Rinkeby,
       readOnlyUrls: {
-        [Optimism.chainId]: "https://mainnet.optimism.io",
+        //[Optimism.chainId]: "https://mainnet.optimism.io",
+        [Rinkeby.chainId]: getDefaultProvider("rinkeby"),
       },
     }}>
 
-    <div className="container">
+    <Note />
 
+    <div className="container">
        <Navbar /> 
         <Routes>
           <Route path='/' element={ <Home /> }/>
