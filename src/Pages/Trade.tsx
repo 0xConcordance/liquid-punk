@@ -1,4 +1,5 @@
 import {Chart} from '../Components/Chart'
+import {ApproveERC20} from '../Components/ApproveERC20'
 
 // USEDAPP
 import {useEthers, useContractFunction, useCall, ERC20Interface, useTokenBalance} from '@usedapp/core'
@@ -16,6 +17,7 @@ import { ERC20address } from '../Contracts/er20Address';
 
 import { useState } from "react";
 
+import {Wallet} from '../Components/Wallet'
 
 export const Trade = () => {
 
@@ -33,14 +35,17 @@ export const Trade = () => {
                 </div>
             )}
 
+            <Wallet />
+
             <div className='frame' hidden>
+                <h2>Trade</h2>
                 <div className='row'>
                     <div className='col-8'>
                         <Chart />
 
                     </div>
                     <div className='col-4'>
-                        <p>Trade</p>
+
                     </div>
                 </div>
             </div>

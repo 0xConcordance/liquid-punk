@@ -24,7 +24,6 @@ input[type=number], select {
   }
   
   input[type=submit] {
-    width: 20%;
     background-color: #f01f1f;
     color: white;
     padding: 14px 20px;

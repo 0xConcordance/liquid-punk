@@ -1,0 +1,1 @@
+export const ExchangeAddress = "0x373deC2531bFeA31d60916dD50aA9C7dbca99F88"
