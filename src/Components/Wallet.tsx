@@ -1,6 +1,7 @@
 import {ApproveERC20} from '../Components/ApproveERC20'
 import {DepositETH} from './ExchangeComponents/DepositETH'
 import {DepositTokens} from './ExchangeComponents/DepositTokens'
+import { WithDrawETH } from './ExchangeComponents/withdrawETH'
 
 // USEDAPP
 import {useEthers, useContractFunction, useCall, ERC20Interface, useTokenBalance} from '@usedapp/core'
@@ -46,6 +47,9 @@ export const Wallet = () => {
                 </div>
                 <div className='col-sm-4'>
                     <DepositTokens />
+                </div>
+                <div className='col-sm-4'>
+                    <WithDrawETH />
                 </div>
              </div>
         </div>

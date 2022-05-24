@@ -43,7 +43,7 @@ function useGetExchangeETHBalance(
 export const GetExchangeBalanceETH = () => {
     const { account } = useEthers()
 
-    const tokenBalance = useGetExchangeETHBalance(account, "ETH")
+    const tokenBalance = useGetExchangeETHBalance(account, "ETH") / 1e18
     
     return(
         <>

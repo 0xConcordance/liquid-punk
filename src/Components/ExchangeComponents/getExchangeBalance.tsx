@@ -36,14 +36,14 @@ function useGetExchangeTokenBalance(
       console.error(error.message)
       return undefined
     }
-    return value?.[0].toString() 
+    return value?.[0]
   }
 
 
 export const GetExchangeBalance = () => {
     const { account } = useEthers()
 
-    const tokenBalance = useGetExchangeTokenBalance(account, "oPUNK")
+    const tokenBalance = useGetExchangeTokenBalance(account, "oPUNK") / 1e18
     
     return(
         <>
