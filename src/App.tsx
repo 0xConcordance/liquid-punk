@@ -15,15 +15,13 @@ import {Note} from './Components/Note'
 function App() {
   return (
     <DAppProvider config={{
-      supportedChains: [ChainId.Rinkeby],
-      readOnlyChainId: ChainId.Rinkeby,
+      supportedChains: [ChainId.Optimism],
+      readOnlyChainId: ChainId.Optimism,
       readOnlyUrls: {
-        //[Optimism.chainId]: "https://mainnet.optimism.io",
-        [Rinkeby.chainId]: getDefaultProvider("rinkeby"),
+        [Optimism.chainId]: "https://mainnet.optimism.io",
+        // [Rinkeby.chainId]: getDefaultProvider("rinkeby"),
       },
     }}>
-
-    <Note />
 
     <div className="container">
        <Navbar /> 
