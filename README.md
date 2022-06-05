@@ -1,5 +1,5 @@
 # Liquify your OptiPunk
-Note: use at own risk, smart contracts are unaudited 
+Note: use at own risk, smart contracts are unaudited. Moreover there is no use-case for oPunk. This is meant to be a personal project. 
 
 Trade Optipunks here: https://quixotic.io/collection/optipunks
 LiquidPunk hosted here: https://liquid-punk.vercel.app/
